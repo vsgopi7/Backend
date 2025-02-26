@@ -2,7 +2,9 @@
 import dotenv from 'dotenv';
 import connectDB from './db/index.js'; // Ensure the correct path and file extension
 import {app} from './app.js'; // Ensure the correct path and file extension
-dotenv.config();
+dotenv.config({
+    path:'./.env'
+});
 
 
 const port = process.env.PORT || 3000;

@@ -2,9 +2,7 @@ import mongoose,{Schema} from 'mongoose';
 
 import jwt from 'jsonwebtoken';  // for generating tokens
 
-import bcrypt from 'bcryptjs';
-
-
+import bcrypt from 'bcrypt'; // Update to use bcrypt
 
 const userSchema = new Schema({
     username:{
